@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 
+
 class Header extends Component {
 
   renderLinks(){
@@ -9,7 +10,7 @@ class Header extends Component {
       // show a link to sign out
       return (
         <li className="nav-item">
-          <Link onClick={this.signOut} to="/signout" className="nav-link">Sign Out</Link>
+          <Link className="nav-link" to="/signout">Sign Out</Link>
         </li>
       )
     }
